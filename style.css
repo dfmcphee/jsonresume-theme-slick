@@ -1,0 +1,117 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+	font-family: 'entypo', sans-serif;
+}
+
+body {
+	background: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	line-height: 1.4;
+}
+em {
+	color: #999;
+}
+p {
+	line-height: 1.4;
+}
+ul {
+	margin-bottom: 0;
+}
+section {
+	margin-bottom: 2em;
+}
+blockquote {
+	margin: 0;
+	margin-bottom: 1em;
+}
+
+strong, h1, h2, h3, h4, h5 {
+	font-weight: 500;
+	margin-top:0px;
+}
+
+#resume {
+		margin-top:2.5em;
+}
+
+.avatar {
+	border-radius: 50%;
+	max-width:80%;
+	margin-top:1em;
+}
+
+.item {
+	margin-bottom: 1em;
+}
+
+#basics icon {
+	margin-right:10px;
+}
+
+.address span:after {
+	content: ",";
+}
+
+.address span:last-of-type:after {
+	content: "";
+}
+
+.postalCode {
+	margin-left:1.9em;
+}
+
+#location {
+	margin-bottom:1em;
+}
+
+#profiles {
+	margin-bottom:1em;
+}
+
+#profiles .item {
+	display:inline-block;
+	vertical-align:top;
+	margin-right:0.25em;
+}
+
+#profiles icon {
+	margin-right:0px;
+}
+
+#profiles icon {
+	font-size: 2em;
+}
+
+#profiles a {
+	color: #4b4b4b;
+}
+
+#profiles a:hover {
+	text-decoration: none;
+	color: #3b3b3b;
+}
+
+.summary .lead {
+	font-size: 1.4em;
+}
+
+.position .lead, .area .lead {
+	margin-bottom:5px;
+}
+
+.date {
+	margin-bottom: 5px;
+}
+
+.date, .awarder, .website {
+	margin-bottom: 5px;
+}
+
+#skills .item {
+	display:inline-block;
+	vertical-align:top;
+	margin-right:2em;
+}

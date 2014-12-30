@@ -1,0 +1,14 @@
+{
+  "name": "jsonresume-theme-slick",
+  "version": "0.1.1",
+  "description": "Slick theme for JSON Resume",
+  "author": "Dominic McPhee",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erming/jsonresume-theme-boilerplate"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "handlebars": "^2.0.0-alpha.4"
+  }
+}
