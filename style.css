@@ -5,6 +5,22 @@
 	font-family: 'entypo', sans-serif;
 }
 
+icon.large {
+	font-size: 2em;
+	color: #fff;
+	background: #939393;
+	padding: 7px 45px 10px 15px;
+	border-radius:60px;
+	margin-top: 0px;
+	display:block;
+	width:50px;
+}
+
+#profiles [class*="entypo-"] {
+	margin-right:0px;
+	font-size: 2em;
+}
+
 body {
 	background: #fff;
 	font-family: 'Roboto', sans-serif;
@@ -31,6 +47,31 @@ blockquote {
 strong, h1, h2, h3, h4, h5 {
 	font-weight: 500;
 	margin-top:0px;
+}
+
+h2 {
+	text-transform: uppercase;
+	width: 75%;
+	color: #939393;
+	font-size: 2em;
+}
+
+h2.section-title {
+	margin-left: 15px;
+	line-height: 1.8em;
+}
+
+#work h2.section-title {
+	line-height: 1.2em;
+}
+
+#card {
+	margin-bottom: 2em;
+}
+
+#card h2 {
+	font-size: 1.6em;
+	margin-left: 0px;
 }
 
 #resume {
@@ -77,14 +118,6 @@ strong, h1, h2, h3, h4, h5 {
 	margin-right:0.25em;
 }
 
-#profiles icon {
-	margin-right:0px;
-}
-
-#profiles icon {
-	font-size: 2em;
-}
-
 #profiles a {
 	color: #4b4b4b;
 }
@@ -95,10 +128,10 @@ strong, h1, h2, h3, h4, h5 {
 }
 
 .summary .lead {
-	font-size: 1.4em;
+	font-size: 1.3em;
 }
 
-.position .lead, .area .lead {
+.position .lead, .area .lead, .awarder .lead {
 	margin-bottom:5px;
 }
 
@@ -114,4 +147,37 @@ strong, h1, h2, h3, h4, h5 {
 	display:inline-block;
 	vertical-align:top;
 	margin-right:2em;
+}
+
+#interests .item {
+	display:inline-block;
+	vertical-align:top;
+	margin-right:1em;
+}
+
+icon.large.entypo-heart {
+	padding: 7px 43px 10px 17px;
+}
+
+icon.large.entypo-trophy {
+	padding: 7px 43px 10px 17px;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+	h2.section-title {
+		font-size: 1.8em;
+		margin-left: 30px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	h2.section-title {
+		font-size: 2.2em;
+		line-height: 1.6em;
+		margin-bottom: 1.4em;
+	}
+
+	#work h2.section-title {
+		line-height: 1.6em;
+	}
 }

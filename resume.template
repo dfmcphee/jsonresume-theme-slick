@@ -18,7 +18,7 @@
 
 	<div class="container" id="resume">
 			{{#resume.basics}}
-			<div class="row">
+			<div id="card" class="row">
 				<div class="col-xs-4">
 					{{#if picture}}
 					<img class="avatar" src="{{picture}}"/>
@@ -100,7 +100,14 @@
 	{{#if resume.work.length}}
 	<section id="work" class="row">
 		<div class="col-sm-4">
-			<h2>Work Experience</h2>
+			<div class="row">
+				<div class="col-xs-2">
+					<icon class="large entypo-briefcase"></icon>
+				</div>
+				<div class="col-xs-10">
+					<h2 class="section-title">Work Experience</h2>
+				</div>
+			</div>
 		</div>
 		<div class="col-sm-8">
 			{{#each resume.work}}
@@ -157,8 +164,16 @@
 	{{#if resume.volunteer.length}}
 	<section id="volunteer" class="row">
 		<div class="col-sm-4">
-			<h2>Volunteer</h2>
+			<div class="row">
+				<div class="col-xs-2">
+					<icon class="large entypo-globe"></icon>
+				</div>
+				<div class="col-xs-10">
+					<h2 class="section-title">Volunteer</h2>
+				</div>
+			</div>
 		</div>
+
 		<div class="col-sm-8">
 			{{#each resume.volunteer}}
 			<div class="item">
@@ -214,7 +229,14 @@
 	{{#if resume.education.length}}
 	<section id="education" class="row">
 		<div class="col-sm-4">
-			<h2>Education</h2>
+			<div class="row">
+				<div class="col-xs-2">
+					<icon class="large entypo-graduation-cap"></icon>
+				</div>
+				<div class="col-xs-10">
+					<h2 class="section-title">Education</h2>
+				</div>
+			</div>
 		</div>
 		<div class="col-sm-8">
 			{{#each resume.education}}
@@ -269,7 +291,14 @@
 	{{#if resume.awards.length}}
 	<section id="awards" class="row">
 		<div class="col-sm-4">
-			<h2>Awards</h2>
+			<div class="row">
+				<div class="col-xs-2">
+					<icon class="large entypo-trophy"></icon>
+				</div>
+				<div class="col-xs-10">
+					<h2 class="section-title">Awards</h2>
+				</div>
+			</div>
 		</div>
 		<div class="col-sm-8">
 			{{#each resume.awards}}
@@ -279,7 +308,7 @@
 				{{/if}}
 				{{#if awarder}}
 				<div class="awarder">
-					{{awarder}}
+					<p class="lead">{{awarder}}</p>
 				</div>
 				{{/if}}
 				{{#if date}}
@@ -301,19 +330,26 @@
 	{{#if resume.publications.length}}
 	<section id="publications" class="row">
 		<div class="col-sm-4">
-			<h2>Publications</h2>
+			<div class="row">
+				<div class="col-xs-2">
+					<icon class="large entypo-book"></icon>
+				</div>
+				<div class="col-xs-10">
+					<h2 class="section-title">Publications</h2>
+				</div>
+			</div>
 		</div>
 		<div class="col-sm-8">
 			{{#each resume.publications}}
 			<div class="item">
 				{{#if name}}
 				<div class="name">
-					{{name}}
+					<h3>{{name}}</h3>
 				</div>
 				{{/if}}
 				{{#if publisher}}
 				<div class="publisher">
-					{{publisher}}
+					<p class="lead">{{publisher}}</p>
 				</div>
 				{{/if}}
 				{{#if releaseDate}}
@@ -340,15 +376,20 @@
 	{{#if resume.skills.length}}
 	<section id="skills" class="row">
 		<div class="col-sm-4">
-			<h2>Skills</h2>
+			<div class="row">
+				<div class="col-xs-2">
+					<icon class="large entypo-tools"></icon>
+				</div>
+				<div class="col-xs-10">
+					<h2 class="section-title">Skills</h2>
+				</div>
+			</div>
 		</div>
 		<div class="col-sm-8">
 			{{#each resume.skills}}
 			<div class="item">
 				{{#if name}}
-				<div class="name">
-					{{name}}
-				</div>
+				<h3 class="name">{{name}}</h3>
 				{{/if}}
 				{{#if level}}
 				<div class="level">
@@ -371,15 +412,20 @@
 	{{#if resume.languages.length}}
 	<section id="languages" class="row">
 		<div class="col-sm-4">
-			<h2>Languages</h2>
+			<div class="row">
+				<div class="col-xs-2">
+					<icon class="large entypo-chat"></icon>
+				</div>
+				<div class="col-xs-10">
+					<h2 class="section-title">Languages</h2>
+				</div>
+			</div>
 		</div>
 		<div class="col-sm-8">
 			{{#each resume.languages}}
 			<div class="item">
 				{{#if language}}
-				<div class="language">
-					{{language}}
-				</div>
+				<h3 class="language">{{language}}</h3>
 				{{/if}}
 				{{#if fluency}}
 				<div class="fluency">
@@ -395,22 +441,20 @@
 	{{#if resume.interests.length}}
 	<section id="interests" class="row">
 		<div class="col-sm-4">
-			<h2>Interests</h2>
+			<div class="row">
+				<div class="col-xs-2">
+					<icon class="large entypo-heart"></icon>
+				</div>
+				<div class="col-xs-10">
+					<h2 class="section-title">Interests</h2>
+				</div>
+			</div>
 		</div>
 		<div class="col-sm-4">
 			{{#each resume.interests}}
 			<div class="item">
 				{{#if name}}
-				<div class="name">
-					{{name}}
-				</div>
-				{{/if}}
-				{{#if keywords.length}}
-				<ul class="keywords">
-					{{#each keywords}}
-					<li>{{.}}</li>
-					{{/each}}
-				</ul>
+				<h3><span class="label label-default label-lg">{{name}}</span></h3>
 				{{/if}}
 			</div>
 			{{/each}}
@@ -421,7 +465,14 @@
 	{{#if resume.references.length}}
 	<section id="references" class="row">
 		<div class="col-sm-4">
-			<h2>References</h2>
+			<div class="row">
+				<div class="col-xs-2">
+					<icon class="large entypo-thumbs-up"></icon>
+				</div>
+				<div class="col-xs-10">
+					<h2 class="section-title">References</h2>
+				</div>
+			</div>
 		</div>
 		<div class="col-sm-4">
 			{{#each resume.references}}
