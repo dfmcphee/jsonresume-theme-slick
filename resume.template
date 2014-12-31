@@ -19,12 +19,12 @@
 	<div class="container" id="resume">
 			{{#resume.basics}}
 			<div id="card" class="row">
-				<div class="col-xs-4">
+				<div class="col-xs-3 col-sm-4">
 					{{#if picture}}
 					<img class="avatar" src="{{picture}}"/>
 					{{/if}}
 				</div>
-				<div class="col-xs-8">
+				<div class="col-xs-9 col-sm-8">
 					<h1>{{name}}</h1>
 					<h2>{{label}}</h2>
 					<section id="basics">
@@ -88,14 +88,18 @@
 							{{/each}}
 						</section>
 						{{/if}}
-						{{#if summary}}
-						<div class="summary">
-							<p class="lead">{{summary}}</p>
-						</div>
-						{{/if}}
 					</section>
 				</div>
 			</div>
+			{{#if summary}}
+			<div id="summary" class="row">
+				<div class="col-sm-8 col-sm-offset-4 col-xs-12">
+					<div class="summary">
+						<p class="lead">{{summary}}</p>
+					</div>
+				</div>
+			</div>
+			{{/if}}
 		{{/resume.basics}}
 	{{#if resume.work.length}}
 	<section id="work" class="row">
@@ -353,7 +357,7 @@
 				</div>
 				{{/if}}
 				{{#if releaseDate}}
-				<div class="releaseDate">
+				<div class="date">
 					{{releaseDate}}
 				</div>
 				{{/if}}
