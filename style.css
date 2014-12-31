@@ -17,8 +17,66 @@ icon.large {
 }
 
 #profiles [class*="entypo-"] {
-	margin-right:0px;
-	font-size: 2em;
+	margin-right:10px;
+	font-size: 2.8em;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+}
+
+#profiles .entypo-twitter:hover {
+	color: #55acee;
+}
+#profiles .entypo-facebook:hover {
+	color: #3b5998;
+}
+#profiles .entypo-linkedin:hover {
+	color: #0976b4;
+}
+#profiles .entypo-github:hover {
+	color: #999;
+}
+#profiles .entypo-tumblr:hover {
+	color: #35465c;
+}
+#profiles .entypo-pinterest:hover {
+	color: #cc2127;
+}
+#profiles .entypo-dribble:hover {
+	color: #ea4c89;
+}
+#profiles .entypo-rdio:hover {
+	color: #007dc3;
+}
+#profiles .entypo-spotify:hover {
+	color: #7ab800;
+}
+#profiles .entypo-stumbleupon:hover {
+	color: #eb4924;
+}
+#profiles .entypo-soundcloud:hover {
+	color: #f80;
+}
+#profiles .entypo-instagram:hover {
+	color: #3f729b;
+}
+#profiles .entypo-skype:hover {
+	color: #00aff0;
+}
+#profiles .entypo-flickr:hover {
+	color: #ff0084;
+}
+#profiles .entypo-vimeo:hover {
+	color: #1ab7ea;
+}
+#profiles .entypo-gplus:hover {
+	color: #dd4b39;
+}
+
+#profiles {
+	height: 50px;
+	vertical-align:middle;
 }
 
 body {
@@ -90,6 +148,7 @@ h2.section-title {
 
 #basics icon {
 	margin-right:10px;
+	font-size:1.2em;
 }
 
 .address span:after {
@@ -162,6 +221,10 @@ icon.large.entypo-heart {
 }
 
 icon.large.entypo-trophy {
+	padding: 7px 43px 10px 17px;
+}
+
+icon.large.entypo-book {
 	padding: 7px 43px 10px 17px;
 }
 

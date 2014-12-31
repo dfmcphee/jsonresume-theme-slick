@@ -32,13 +32,13 @@
 							{{#if website}}
 							<div class="website">
 								<icon class="entypo-compass"></icon>
-								{{website}}
+								<a href="{{website}}">{{website}}</a>
 							</div>
 							{{/if}}
 							{{#if email}}
 							<div class="email">
 								<icon class="entypo-mail"></icon>
-								{{email}}
+								<a href="mailto:{{email}}">{{email}}</a>
 							</div>
 							{{/if}}
 							{{#if phone}}
@@ -79,7 +79,7 @@
 								<a href="{{url}}">
 								{{/if}}
 								{{#if network}}
-								<icon class="entypo-{{class}}-circled"></icon>
+								<icon class="entypo-{{class}}"></icon>
 								{{/if}}
 								{{#if url}}
 								</a>

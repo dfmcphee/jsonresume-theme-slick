@@ -11,22 +11,17 @@ Take a look at my resume [JSON Resume](http://registry.jsonresume.org/dfmcphee).
 * vimeo
 * twitter
 * facebook
-* google+
+* gplus
 * google-circles
 * pinterest
 * tumblr
 * linkedin
 * dribble
-* stumbleupon
-* lastfm
 * rdio
 * spotify
 * soundcloud
 * instagram
-* dropbox
-* evernote
 * skype
-* picasa
 
 ## License
 
