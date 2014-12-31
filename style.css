@@ -131,15 +131,17 @@ h2.section-title {
 	font-size: 1.3em;
 }
 
-.position .lead, .area .lead, .awarder .lead {
+.position .lead, .area .lead, .awarder .lead, .publisher .lead {
 	margin-bottom:5px;
 }
 
 .date {
 	margin-bottom: 5px;
+	color: #939393;
+	font-size: 1.1em;
 }
 
-.date, .awarder, .website {
+.awarder, .website {
 	margin-bottom: 5px;
 }
 
@@ -160,6 +162,14 @@ icon.large.entypo-heart {
 }
 
 icon.large.entypo-trophy {
+	padding: 7px 43px 10px 17px;
+}
+
+icon.large.entypo-globe {
+	padding: 7px 43px 10px 17px;
+}
+
+icon.large.entypo-thumbs-up {
 	padding: 7px 43px 10px 17px;
 }
 

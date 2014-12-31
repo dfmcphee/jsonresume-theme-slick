@@ -251,7 +251,7 @@
 				{{/if}}
 				{{#if studyType}}
 				<div class="studyType">
-					{{studyType}}
+					<h4>{{studyType}}</h4>
 				</div>
 				{{/if}}
 				<div class="date">
@@ -393,7 +393,7 @@
 				{{/if}}
 				{{#if level}}
 				<div class="level">
-					<em>{{level}}</em>
+					<p><em>{{level}}</em></p>
 				</div>
 				{{/if}}
 				{{#if keywords.length}}
@@ -474,7 +474,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-sm-4">
+		<div class="col-sm-8">
 			{{#each resume.references}}
 			<div class="item">
 				{{#if reference}}
