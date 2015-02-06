@@ -3,9 +3,11 @@
 This is a theme for [JSON Resume](http://jsonresume.org/).
 
 ## See a preview
+
 Take a look at my resume [JSON Resume](http://registry.jsonresume.org/dfmcphee).
 
 ## Supported Social Profiles
+
 * github
 * flickr
 * vimeo
